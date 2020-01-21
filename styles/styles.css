@@ -1,0 +1,211 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 400;
+}
+
+/* ----------BEGIN NAVIGATIEBALK MOBILE---------- */
+
+header {
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 54px;
+	padding: 0 20 px;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+img#logo {
+	line-height: 54px;
+	margin-right: auto;
+	margin-left: 1em;
+	margin-top: 1em;
+	height: 27px;
+	width: 89px;
+}
+
+img#profielfoto {
+	border-radius: 50%;
+	width: 34px;
+	height: 34px;
+	margin: auto 6px auto 10px;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li {
+	list-style: none;
+}
+
+header nav ul li a {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20 px;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 20px;
+	display: none;
+}
+
+header nav ul li a:hover {
+	color: blue;
+	background: black;
+}
+
+
+/* ----------EINDE NAVIGATIEBALK MOBILE---------- */
+
+/* ----------BEGIN MAIN CONTENT---------- */
+
+section:nth-of-type(1) {
+	display: inline block;
+	text-align: center;
+}
+
+section:nth-of-type(1) p {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	box-sizing: border-box;
+	margin-top: 4em;
+}
+
+section:nth-of-type(1) h1 {
+	font-size: 48px;
+	font-weight: 900px;
+	letter-spacing: -0.04em;
+}
+
+section:nth-of-type(1) a {
+	background-color: rgb(26, 163, 74);
+	color: white;
+	border-radius: 35px;
+	padding: 19px 56px 21px 56px;
+	margin: 32px 0px 32px 0px;
+	border: rgb(26, 163, 74);
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+/* ----------Zorgt voor de gradient---------- */
+main::before {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+	background-image: linear-gradient(transparent, #000);
+	content: '';
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+section#banner {
+	width: 100vw;
+	height: 100vh;
+	color: #fff;
+}
+
+section#banner::before {
+	background-color: #509BF5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#C074B2), to(#8AB5E8));
+	background-image: linear-gradient(#C074B2, #8AB5E8);
+	content: '';
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	padding-top: 5vh;
+	position: absolute;
+	z-index: -2;
+}
+
+
+/* ----------Scrollen - White space zodat het naast elkaar staat---------- */
+section#banner ul {
+	display: inline-block;
+	overflow-x: scroll;
+	width: 100%;
+	white-space: nowrap;
+}
+
+/* ----------Zorgt voor de grootte voor het albumblok---------- */
+section#banner ul li {
+	display: inline-block;
+	width: 55%;
+	max-width: 400px;
+	padding: 1rem;
+}
+
+
+/* ----------Shaduw aan het album---------- */
+section#banner ul li figure {
+	-webkit-box-shadow: 1px 1px 16px -2px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 1px 16px -2px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+
+
+/* ----------Width zorgt dat de img zich aan de block grootte houd---------- */
+section#banner ul li figure img {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+/* ----------Weghalen desktop figcaption---------- */
+section#banner ul li figure figcaption {
+	display: none;
+}
+
+
+/* ----------mobile figcaption---------- */
+section#banner ul li figcaption {
+	margin-top: 20px;
+	color: #fff;
+}
+
+/* ----------mobile figcaption---------- */
+section#banner ul li figcaption:nth-last-child(1) a {
+	background: none;
+	color: rgb(26, 163, 74);
+	font-size: 1rem;
+	padding: 0;
+	cursor: pointer;
+}
+
+section#banner ul li figcaption:nth-last-child(1) p {
+	margin: 0;
+}
+
+@media (min-width: 900px) {
+	section#banner ul li figure figcaption {
+		background: rgba(0, 0, 0, 0.6);
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+}
