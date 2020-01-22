@@ -17,26 +17,29 @@ header {
 	display: flex;
 	background-color: rgba(0, 0, 0, 0.6);
 	height: 54px;
-	padding: 0 20 px;
+	padding: 0 15 px;
 	width: 100%;
 	box-sizing: border-box;
 	overflow: hidden;
 }
 
-img#logo {
+/* ----------Gebruik filter om SVG kleur te veranderen---------- */
+header:first-of-type img {
 	line-height: 54px;
 	margin-right: auto;
 	margin-left: 1em;
 	margin-top: 1em;
 	height: 27px;
 	width: 89px;
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(287deg) brightness(104%) contrast(104%);
 }
 
-img#profielfoto {
+header:nth-of-type(1) nav ul li img {
 	border-radius: 50%;
 	width: 34px;
 	height: 34px;
 	margin: auto 6px auto 10px;
+	filter: none;
 }
 
 header nav ul {
@@ -57,6 +60,7 @@ header nav ul li a {
 	text-decoration: none;
 	padding: 0 20px;
 	display: none;
+	/* ----------tijdelijk---------- */
 }
 
 header nav ul li a:hover {
@@ -74,12 +78,25 @@ section:nth-of-type(1) {
 	text-align: center;
 }
 
+section:nth-of-type(1) h4 {
+	font-size: 18px;
+	color: rgb(145, 148, 150);
+	font-weight: 700;
+	margin-top: 24px;
+	margin-bottom: 0px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
 section:nth-of-type(1) p {
 	font-size: 12px;
+	color: white;
 	font-weight: 700;
 	line-height: 18px;
-	box-sizing: border-box;
 	margin-top: 4em;
+	cursor: pointer;
 }
 
 section:nth-of-type(1) h1 {
@@ -118,7 +135,7 @@ main::before {
 
 section#banner {
 	width: 100vw;
-	height: 100vh;
+	height: 85vh;
 	color: #fff;
 }
 
@@ -138,7 +155,7 @@ section#banner::before {
 
 
 /* ----------Scrollen - White space zodat het naast elkaar staat---------- */
-section#banner ul {
+section:nth-of-type(1) ul {
 	display: inline-block;
 	overflow-x: scroll;
 	width: 100%;
@@ -146,7 +163,7 @@ section#banner ul {
 }
 
 /* ----------Zorgt voor de grootte voor het albumblok---------- */
-section#banner ul li {
+section:nth-of-type(1) li {
 	display: inline-block;
 	width: 55%;
 	max-width: 400px;
@@ -155,7 +172,7 @@ section#banner ul li {
 
 
 /* ----------Shaduw aan het album---------- */
-section#banner ul li figure {
+section:nth-of-type(1) ul li figure {
 	-webkit-box-shadow: 1px 1px 16px -2px rgba(0, 0, 0, 0.3);
 	box-shadow: 1px 1px 16px -2px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
@@ -163,8 +180,7 @@ section#banner ul li figure {
 
 
 /* ----------Width zorgt dat de img zich aan de block grootte houd---------- */
-section#banner ul li figure img {
-	opacity: 1;
+section:nth-of-type(1) ul li figure img {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -172,29 +188,110 @@ section#banner ul li figure img {
 
 
 /* ----------Weghalen desktop figcaption---------- */
-section#banner ul li figure figcaption {
+section:nth-of-type(1) ul li figure figcaption {
 	display: none;
 }
 
 
 /* ----------mobile figcaption---------- */
-section#banner ul li figcaption {
+section:nth-of-type(1) ul li figcaption {
 	margin-top: 20px;
 	color: #fff;
 }
 
 /* ----------mobile figcaption---------- */
-section#banner ul li figcaption:nth-last-child(1) a {
+section:nth-of-type(1) ul li figcaption:nth-last-child(1) a {
 	background: none;
 	color: rgb(26, 163, 74);
-	font-size: 1rem;
+	font-size: 14px;
 	padding: 0;
+	cursor: pointer;
+	margin-top: 1em;
+}
+
+/* ----------Artiest titel aanpassen---------- */
+section:nth-of-type(1) ul li figcaption:nth-last-child(1) p {
+	margin: 0;
+	font-size: 16px;
+	color: rgb(193, 195, 198);
+	font-weight: 400;
+	line-height: 18px;
+	margin-top: 0.5em;
 	cursor: pointer;
 }
 
-section#banner ul li figcaption:nth-last-child(1) p {
-	margin: 0;
+section#tweedebanner {
+	background-color: #1E3264;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#2C5E92), to(#552F6D));
+	background-image: linear-gradient(#2C5E92 0%, #552F6D 80%);
+	content: '';
+	width: 100vw;
+	height: 120vh;
+	top: 0;
+	left: 0;
+	position: relative;
+	z-index: -1;
 }
+
+section:nth-of-type(2) {
+	display: inline-block;
+	text-align: center;
+	align-content: center;
+	color: #FFF;
+}
+
+section:nth-of-type(2) h2 {
+	font-size: 32px;
+	font-weight: 1200;
+	margin-bottom: 0.5em;
+	margin-top: 2em;
+}
+
+
+section:nth-of-type(2) p {
+	margin-bottom: 12px;
+	background-color: rgba(30, 50, 100, 0.25);
+	display: inline-block;
+	font-size: 12px;
+	padding: 4px 16px;
+	margin-top: 3em;
+}
+
+/* ----------Zorgt voor het blok achter de artiestnaam---------- */
+section:nth-of-type(2) h4 {
+	margin: 0px -20px;
+	background-color: rgb(30, 50, 100);
+	padding: 12px 40px;
+	text-align: center;
+}
+
+section:nth-of-type(2) a {
+	display: block;
+	color: rgb(26, 163, 74);
+	font-size: 12px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	cursor: pointer;
+	margin-top: 1em;
+}
+
+/* ----------Zorgt voor de grootte voor het albumblok---------- */
+section:nth-of-type(2) figure {
+	display: inline-block;
+	width: 55%;
+	max-width: 400px;
+	padding: 1rem;
+}
+
+
+/* ----------Width zorgt dat de img zich aan de block grootte houd---------- */
+section:nth-of-type(2) figure img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
 
 @media (min-width: 900px) {
 	section#banner ul li figure figcaption {
