@@ -38,8 +38,8 @@ header:nth-of-type(1) nav ul li img {
 	border-radius: 50%;
 	width: 34px;
 	height: 34px;
-	margin: auto 6px auto 10px;
 	filter: none;
+	margin-top: 6px;
 }
 
 header nav ul {
@@ -59,13 +59,10 @@ header nav ul li a {
 	color: #fff;
 	text-decoration: none;
 	padding: 0 20px;
-	display: none;
-	/* ----------tijdelijk---------- */
 }
 
 header nav ul li a:hover {
-	color: blue;
-	background: black;
+	color: rgb(26, 163, 74);
 }
 
 
@@ -154,7 +151,7 @@ section#banner::before {
 }
 
 
-/* ----------Scrollen - White space zodat het naast elkaar staat---------- */
+/* ---------- Scrollen - White space zodat het naast elkaar staat---------- */
 section:nth-of-type(1) ul {
 	display: inline-block;
 	overflow-x: scroll;
@@ -266,6 +263,7 @@ section:nth-of-type(2) a {
 	font-weight: 700;
 	cursor: pointer;
 	margin-top: 1em;
+	text-decoration: none;
 }
 
 /* ----------Zorgt voor de grootte voor het albumblok---------- */
@@ -284,8 +282,120 @@ section:nth-of-type(2) figure img {
 	height: auto;
 }
 
+/* ----------Begin Section 3 Haal het meeste uit Spotify---------- */
+
+section:nth-of-type(3) {
+	text-align: left;
+	margin-left: 2em;
+	padding-bottom: 80px
+}
+
+section:nth-of-type(3) h2 {
+	font-size: 32px;
+	font-weight: 1200;
+	margin-bottom: 0.5em;
+	margin-top: 2em;
+}
+
+section:nth-of-type(3) h4 {
+	font-size: 20px;
+	font-weight: 900;
+	margin-top: 24px;
+	margin-bottom: 12px
+}
+
+section:nth-of-type(3) p {
+	margin: .5em 0 1em;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+section:nth-of-type(3) a {
+	color: rgb(26, 163, 74);
+	font-size: 12px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	cursor: pointer;
+	margin-top: 1em;
+	text-decoration: none;
+}
+
+article:nth-of-type(3)>p a:nth-of-type(1) {
+	font-size: 16px;
+	color: rgb(26, 163, 74);
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+
+
+
+/* ----------Einde Section 3 Haal het meeste uit Spotify---------- */
+
+
+/* ----------Begin footer opmaak---------- */
+
+footer {
+	background-color: #000;
+	padding-bottom: 100px;
+}
+
+footer>img {
+	margin-top: 3em;
+	margin-left: 2em;
+	height: 27px;
+	width: 89px;
+	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(287deg) brightness(104%) contrast(104%);
+}
+
+footer>h5 {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left: 3em;
+	color: #919496;
+	font-size: 12px;
+	font-weight: 900;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+footer li {
+	padding: 3px 0 15px;
+}
+
+footer li a {
+	text-decoration: none;
+	margin-left: 2.2em;
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	padding-top:
+}
+
+footer li a:hover {
+	color: rgb(26, 163, 74);
+}
+
+/* ----------Einde footer opmaak---------- */
 
 
 @media (min-width: 900px) {
-	
+
+	section:nth-of-type(1) ul li figure figcaption {
+		background: rgba(0, 0, 0, 0.6);
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+
+	section:nth-of-type(1) {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	}
+
 }
