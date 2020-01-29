@@ -130,13 +130,13 @@ main::before {
 	z-index: -1;
 }
 
-section#banner {
+section:nth-of-type(1) {
 	width: 100vw;
 	height: 85vh;
 	color: #fff;
 }
 
-section#banner::before {
+section:nth-of-type(1)::before {
 	background-color: #509BF5;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#C074B2), to(#8AB5E8));
 	background-image: linear-gradient(#C074B2, #8AB5E8);
@@ -217,7 +217,8 @@ section:nth-of-type(1) ul li figcaption:nth-last-child(1) p {
 	cursor: pointer;
 }
 
-section#tweedebanner {
+/* ----------Begin Section 2 Top geluisterde nummers ---------- */
+section:nth-of-type(2) {
 	background-color: #1E3264;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#2C5E92), to(#552F6D));
 	background-image: linear-gradient(#2C5E92 0%, #552F6D 80%);
@@ -281,6 +282,8 @@ section:nth-of-type(2) figure img {
 	width: 100%;
 	height: auto;
 }
+
+/* ----------Einde Section 2 Top geluisterde nummers ---------- */
 
 /* ----------Begin Section 3 Haal het meeste uit Spotify---------- */
 
