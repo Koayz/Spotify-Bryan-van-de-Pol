@@ -22,7 +22,9 @@
 
     <header>
 
-        <img src="images/spotify.svg" alt="Logo van spotify">
+        <a href="index.html">
+            <img src="images/spotify.svg" alt="Logo van spotify">
+        </a>
 
         <!-- bron = presentatie week 4 Front end -->
         <div class="hamburger">
@@ -99,30 +101,32 @@
 
 
         <section>
-            <h2>Schrijf je hier voor Premium Spotify!</h2>
-        
-            <form action="">
+            <h2>Schrijf je in voor de niewsbrief</h2>
+
+            <form>
                 <fieldset>
+
                     <label for="name">
-                        Voor + Achternaam
+                        Naam
                     </label>
-                    <input type="text" name="name" required />
+                    <input type="text" name="name" required placeholder="Je volledige naam" />
+
                     <label for="email">
-                        E-mailadres
+                        E-mail
                     </label>
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" required placeholder="E-mailadres">
+
+                    <label for="Wat voor nieuwsbrieven?">Wat voor nieuwsbrieven?</label>
+                    <select name="nieuwsbrief">
+                        <option value="Reclame's en aanbiedingen">Reclame's en aanbiedingen</option>
+                        <option value="Alleen aanbiedingen">Alleen aanbiedingen</option>
+                        <option value="Alleen reclame">Alleen reclame</option>
+                    </select>
+
                 </fieldset>
-                <fieldset>
-                    <label for="city">
-                        Your city
-                    </label>
-                    <input type="text" name="city" required>
-                    <label for="country">
-                        Your country
-                    </label>
-                    <input type="text" name="country">
-                </fieldset>
-                <input type="submit" value="Send">
+
+                <input type="submit" value="Aanmelden">
+
             </form>
         </section>
 
@@ -139,7 +143,9 @@
     <footer>
 
 
-        <img src="images/spotify.svg" alt="Logo van spotify">
+        <a href="index.html">
+            <img src="images/spotify.svg" alt="Logo van spotify">
+        </a>
 
         <ul>
             <li>BEDRIJF</li>

@@ -386,6 +386,10 @@ section:nth-of-type(1) h1 {
 	max-width: 100%;
 }
 
+.tweedepagina section:nth-of-type(1) img {
+	width: 100%;
+}
+
 
 
 /* ----------Begin Section 2 Waarom Premium ---------- */
@@ -420,9 +424,70 @@ section:nth-of-type(1) h1 {
 	margin-top: -2px;
 	font-size: 16px;
 }
+
 /* ----------Einde Section 2 Waarom Premium ---------- */
 
+/* ----------Begin form ---------- */
 
+form {
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+fieldset {
+	padding: 20px;
+	border: 2px solid  rgb(26, 163, 74);
+	margin-bottom: 20px;
+	margin-right: 2em;
+	text-align: left;
+	
+}
+
+/* ----------Stijlt de verschillende inputs---------- */
+input[type=text],
+input[type=email],
+select {
+	width: 100%;
+	padding: 12px 0px;
+	margin: 20px 0;
+	display: inline-block;
+	border: 2px solid rgb(26, 163, 74);
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: rgb(26, 163, 74);
+	color: white;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+select:focus {
+	border: 3px solid rgb(240, 55, 165);
+}
+
+input[type=submit] {
+	background-color: rgb(26, 163, 74);
+	color: white;
+	border-radius: 35px;
+	padding: 19px 56px 21px 56px;
+	margin: 32px 0px 32px 0px;
+	border: rgb(26, 163, 74);
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: darkgreen;
+}
+
+
+
+
+/* ----------Einde form ---------- */
 
 /* ----------Einde premium.html pagina ---------- */
 
@@ -573,7 +638,7 @@ footer li a:hover {
 		font-size: 40px;
 		width: 100%;
 	}
-	
+
 	section:nth-of-type(3) article {
 		width: 33%;
 	}
@@ -593,7 +658,7 @@ footer li a:hover {
 		text-align: left;
 		align-items: center;
 		height: calc(100vh - 54px);
-		
+
 	}
 
 	.tweedepagina section:nth-of-type(2) {
@@ -615,10 +680,17 @@ footer li a:hover {
 		width: 20%;
 	}
 
+	form {
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+	
+
 
 	/* ----------Einde premium.html pagina ---------- */
 
-	
+
 
 
 
