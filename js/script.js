@@ -1,17 +1,11 @@
 
 
-// Voegt display block toe om zo het menu te laten zien als er op wordt gedrukt
-// Bron : https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+// Voegt een class toe om zo het menu te laten zien als er op wordt gedrukt
+// Bron : https://www.w3schools.com/howto/howto_js_dropdown.asp
 
-function myFunction() {
-  var x = document.getElementById("active");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-} 
-
+function myFunction () {
+  document.getElementById("active").classList.toggle("show")
+}
 
 // Als je er buiten klikt verdwijnt het menu ook
 window.onclick = function(event) {
