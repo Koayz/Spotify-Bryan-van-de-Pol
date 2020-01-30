@@ -24,7 +24,7 @@ header:first-of-type img {
 }
 
 /* ----------Navbar styling---------- */
-.navbar {
+nav {
 	display: flex;
 	position: relative;
 	justify-content: space-between;
@@ -576,7 +576,7 @@ footer li a:hover {
 
 	/* ----------Begin navbar desktop---------- */
 
-	.navbar {
+	nav {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
