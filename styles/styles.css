@@ -18,6 +18,7 @@ header:first-of-type img {
 	line-height: 54px;
 	margin-right: auto;
 	margin-left: 1em;
+	margin-top: 2px;
 	height: 27px;
 	width: 89px;
 	filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(287deg) brightness(104%) contrast(104%);
@@ -83,13 +84,8 @@ header:first-of-type img {
 	border-radius: 10px;
 }
 
-.navbar-links.active {
-	display: flex;
-}
 
-.show {
-	display: block;
-}
+
 
 /* ----------Einde navigatiebalk mobile---------- */
 
