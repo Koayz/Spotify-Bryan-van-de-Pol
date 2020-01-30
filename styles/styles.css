@@ -34,11 +34,6 @@ header:first-of-type img {
 	flex-direction: column;
 }
 
-.brand-title {
-	font-size: 1.5rem;
-	margin: .5rem;
-}
-
 /* ----------Laat geen links zien---------- */
 .navbar-links {
 	display: none;
@@ -592,11 +587,6 @@ footer li a:hover {
 		background-color: black;
 		color: white;
 		flex-direction: row;
-	}
-
-	.brand-title {
-		font-size: 1.5rem;
-		margin: .5rem;
 	}
 
 	.navbar-links {
