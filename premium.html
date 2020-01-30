@@ -6,53 +6,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Muziek voor iedereen - Spotify</title>
-
     <link rel="stylesheet" href="https://use.typekit.net/qsp8wvg.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/script.js"></script>
 
+    <title>Muziek voor iedereen - Spotify</title>
 
 </head>
 
 <body class="tweedepagina">
 
-    <!-- BEGIN NAV BAR + HAMBURGER -->
+    <!-- Alle content op deze website behoort tot eigendom van www.spotify.com  -->
 
+
+     <!-- Begin hamburger navbar
+     Bron: https://www.youtube.com/watch?v=At4B7A4GOPg  en
+      https://codepen.io/Guilano/pen/jOOgZKE-->
 
     <header>
 
-        <a href="index.html">
-            <img src="images/spotify.svg" alt="Logo van spotify">
-        </a>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="images/spotify.svg" alt="Logo van spotify">
+            </a>
 
-        <!-- bron = presentatie week 4 Front end -->
-        <div class="hamburger">
-            <span class="link"></span>
-        </div>
-        <nav class="navigatie">
-            <ul>
-                <li><a href="#">Premium</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Downloaden</a></li>
-                <li><a href="#">|</a></li>
-                <li><img src="images/profielfoto.jpg" alt="profielfoto"></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Uitloggen</a></li>
-            </ul>
-
-
-
+            <!-- Gebruik span voor hamburgers bars -->
+            <a href="#" onclick="myFunction()" class="toggle-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div id="active" class="navbar-links">
+                <ul>
+                    <li><a href="premium.html">Premium</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Downloaden</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Uitloggen</a></li>
+                </ul>
+            </div>
         </nav>
 
     </header>
 
-    <!-- EINDE NAV BAR + HAMBURGER -->
+    <!-- Einde hamburger navbar -->
 
-    <!-- MAIN CONTENT-->
+    <!-- Begin main content-->
 
     <main>
 
+        <!--1e section landingspagina-->
         <section>
 
             <div>
@@ -67,7 +71,7 @@
         </section>
 
 
-
+        <!--2e Section waarom premium?-->
         <section>
 
             <h2>Waarom Premium?</h2>
@@ -99,7 +103,7 @@
         </section>
 
 
-
+        <!--3e Section schrijf je in voor de niewsbrief en form-->
         <section>
             <h2>Schrijf je in voor de niewsbrief</h2>
 
@@ -130,22 +134,14 @@
             </form>
         </section>
 
-
-
-
     </main>
 
 
-    <!-- MAIN CONTENT-->
+    <!--Einde main content-->
 
 
-
+    <!--Begin footer-->
     <footer>
-
-
-        <a href="index.html">
-            <img src="images/spotify.svg" alt="Logo van spotify">
-        </a>
 
         <ul>
             <li>BEDRIJF</li>
@@ -173,9 +169,8 @@
         </ul>
 
     </footer>
+    <!--Einde footer-->
 
 </body>
-
-<script src="js/script.js"></script>
 
 </html>
