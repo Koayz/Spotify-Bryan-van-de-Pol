@@ -1,6 +1,6 @@
 
 
-// Voegt een class toe om zo het menu te laten zien als er op wordt gedrukt
+// Voegt display block toe om zo het menu te laten zien als er op wordt gedrukt
 // Bron : https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 
 function myFunction() {
@@ -11,8 +11,6 @@ function myFunction() {
     x.style.display = "block";
   }
 } 
-
-
 
 
 // Als je er buiten klikt verdwijnt het menu ook
